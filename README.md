@@ -29,8 +29,7 @@ Before you can start using the Medical Bot, make sure you have the following pre
 1. Clone this repository to your local machine.
 
     ```bash
-    git clone https://github.com/your-username/langchain-medical-bot.git
-    cd langchain-medical-bot
+    git clone https://github.com/Rajan-Okita/Medical_chatbot.git
     ```
 
 2. Create a Python virtual environment (recommended):
@@ -46,9 +45,7 @@ Before you can start using the Medical Bot, make sure you have the following pre
     pip install -r requirements.txt
     ```
 
-4. Download the required language models and data. Please refer to the Langchain documentation for specific instructions on how to download and set up the language model and vector store.
-
-5. Set up the necessary paths and configurations in your project, including the `DB_FAISS_PATH` variable and other configurations as per your needs.
+4. Set up the necessary paths and configurations in your project, including the `DB_FAISS_PATH` variable and other configurations as per your needs.
 
 ## Getting Started
 
@@ -57,11 +54,17 @@ To get started with the Medical Bot, you need to:
 1. Set up your environment and install the required packages as described in the Installation section.
 
 2. Configure your project by updating the `DB_FAISS_PATH` variable and any other custom configurations in the code.
+3. Run ingest file to set up the vectorstore folder:
+   ```bash
+    python ingest.py 
+    ```
+4. Prepare the language model and data as per the Langchain documentation.
 
-3. Prepare the language model and data as per the Langchain documentation.
-
-4. Start the bot by running the provided Python script or integrating it into your application.
-
+5. Start the bot by running the provided Python script or integrating it into your application.
+   ```bash
+    chainlit run main.py -w 
+    ```
+    
 ## Usage
 
 The Medical Bot can be used for answering medical-related queries. To use the bot, you can follow these steps:
